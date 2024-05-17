@@ -28,7 +28,7 @@ export const Hero=()=>{
                  h-10 px-4 py-2 w-full md:w-1/3" to="/signup">Join Now</Link>
     
               <a
-                href="https://github.com/srexrg"
+                href="https://github.com/tivarii/annadaataa"
                 target="_blank"
                 className={`w-full md:w-1/3 ${buttonVariants({
                   variant: "outline",
