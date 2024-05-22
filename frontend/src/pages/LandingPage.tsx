@@ -6,6 +6,9 @@ import { Features } from "@/components/Features";
 import { Services } from "@/components/Services";
 import { Team } from "@/components/Team";
 import { JoinUs } from "@/components/Newsletter";
+import { FAQ } from "@/components/FAQ";
+import { Footer } from "@/components/Footer";
+import { ScrollToTop } from "@/components/ScrollToTop";
 export const LandingPage=()=>{
     return(
         <div>
@@ -17,6 +20,9 @@ export const LandingPage=()=>{
             <Services/>
             <Team/>
             <JoinUs/>
+            <FAQ/>
+            <Footer/>
+            <ScrollToTop/>
         </div>
         
         
