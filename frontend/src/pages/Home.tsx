@@ -1,6 +1,6 @@
 
 export const Home= ()=>{
-    return {
-        
-    }
+    return (
+        <HomeLanding/>
+    )
 }
