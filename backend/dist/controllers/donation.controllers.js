@@ -77,9 +77,9 @@ const getFoodByCurrentUser = (req, res) => __awaiter(void 0, void 0, void 0, fun
         if (!donations) {
             return res.status(404).json({ error: "No donations found for the current user" });
         }
-        // if (donations.length === 0) {
-        //   return res.status(404).json({ error: "No donations found for the current user" });
-        // }
+        if (donations.length === 0) {
+            return res.status(404).json({ error: "No donations found for the current user" });
+        }
         res.status(200).json(donations);
     }
     catch (error) {

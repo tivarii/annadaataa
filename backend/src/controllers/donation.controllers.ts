@@ -75,9 +75,9 @@ export const getFoodByCurrentUser = async (req:UserAuthInfoRequest, res:Response
       return res.status(404).json({ error: "No donations found for the current user" });
     }
 
-    // if (donations.length === 0) {
-    //   return res.status(404).json({ error: "No donations found for the current user" });
-    // }
+    if (donations.length === 0) {
+      return res.status(404).json({ error: "No donations found for the current user" });
+    }
 
     res.status(200).json(donations);
   } catch (error) {

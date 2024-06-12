@@ -27,7 +27,7 @@ const FoodItem: React.FunctionComponent<Props> = ({ food }) => {
   const handleRequestClick = async () => {
     setLoading(true)
     try {
-      const response = await fetch(`localhost:5000/api/food/request/${food._id}`, {
+      const response = await fetch(`http://localhost:5000/api/food/request/${food._id}`, {
 
         method: "POST",
         headers: {
@@ -48,7 +48,7 @@ const FoodItem: React.FunctionComponent<Props> = ({ food }) => {
 
   const handleViewClick = async () => {
     try {
-      const response = await fetch(`localhost:8080/api/food/${food._id}`,{
+      const response = await fetch(`http://localhost:5000/api/food/${food._id}`,{
 
       headers:{
         Authorization: `Bearer ${authUser.token}`,

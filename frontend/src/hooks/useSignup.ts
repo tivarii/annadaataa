@@ -27,7 +27,8 @@ const useSignup = () => {
 
     setLoading(true);
     try {
-      const res = await fetch(`localhost:5000/api/auth/register`, {
+      console.log("trying to fetch");
+      const res = await fetch(`http://localhost:5000/api/auth/register`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({

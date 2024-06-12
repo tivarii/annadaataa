@@ -24,7 +24,7 @@ const FoodList: React.FC = () => {
       setLoading(true);
       try {
         const response = await fetch(
-          `localhost:5000/api/food/`,
+          `http://localhost:5000/api/food/`,
           {
             headers: {
               "Content-Type": "application/json",

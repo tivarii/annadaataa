@@ -1,6 +1,13 @@
+import { HomeLanding } from "@/components/component/home-land"
 
-export const Home= ()=>{
-    return (
-        <HomeLanding/>
-    )
+
+
+const Home = () => {
+  return (
+    <>
+      <HomeLanding/>
+    </>
+  )
 }
+
+export default Home

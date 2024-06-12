@@ -26,7 +26,7 @@ const donationSchema = new Schema<IDonation>({
   foodName: { type: String, required: true },
   description: { type: String },
   quantity: { type: String, required: true },
-  foodImage:{type:String,required:true},
+  foodImage:{type:String,required: true},
   sharedBy: { type: String, required: true },
   location: { type: String, required: true },
   donationDate: { type: Date, default: Date.now },
