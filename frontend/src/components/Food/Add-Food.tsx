@@ -86,7 +86,7 @@ export default function AddFood() {
 
     setLoading(true);
     try {
-      const res = await fetch(`http://localhost:5000/api/food/donate-food`, {
+      const res = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/food/donate-food`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

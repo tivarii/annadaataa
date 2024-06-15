@@ -22,7 +22,7 @@ const MyDonation: React.FC<Props> = ({ food,reloadRequests }: Props) => {
   const handleDeleteDonation = async () => {
     setLoading(true);
     try {
-      const response = await fetch(`http//localhst:5000/api/food/delete/${_id}`, {
+      const response = await fetch(`${import.meta.env.VITE_BACKEND_URL}/api/food/delete/${_id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${authUser.token}`,
