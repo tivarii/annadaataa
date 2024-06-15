@@ -6,7 +6,7 @@ interface Food {
   foodName: string;
   description: string;
   quantity: string;
-  foodImage?: string | null;
+  foodImage: string ;
   sharedBy: string;
 
 }
