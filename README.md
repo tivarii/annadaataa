@@ -1,6 +1,7 @@
-# Annadata   (https://annadaata-blr18zgfd-adarsh-tiwaris-projects-00965c6b.vercel.app/)
+# Annadata   
 
 Annadata is a community-driven food sharing platform aimed at fostering connections and supporting each other through the love of food.
+[visit] (https://annadaata-sigma.vercel.app/)
 
 ## Features
 
