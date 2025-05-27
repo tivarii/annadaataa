@@ -10,13 +10,13 @@ import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 import { useState } from "react"
-import { Menu, Send, CheckCircle, AlertCircle, Wallet } from "lucide-react"
+import { Send, CheckCircle, AlertCircle, Wallet } from "lucide-react"
 import { Link } from "react-router-dom";
 import { Alert, AlertDescription } from "@/components/ui/alert"
 import { FaHome } from "react-icons/fa"
 
 function DonationForm() {
-    const { publicKey, signTransaction, connect, wallets, select } = useWallet()
+    const { publicKey, signTransaction, wallets } = useWallet()
     const [recipientAddress, setRecipientAddress] = useState("")
     const [amount, setAmount] = useState("")
     const [loading, setLoading] = useState(false)
