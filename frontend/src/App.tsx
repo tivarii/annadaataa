@@ -13,6 +13,7 @@ import MyFoods from './components/Food/MyFood';
 import MyRequests from './components/Food/MyRequests';
 import IncomingRequests from './components/Food/IncomingRequest';
 import { Toaster } from 'react-hot-toast';
+import DonatePage from './components/DonatePage';
 
 function App() {
   const {authUser}=useAuthContext() || {};
@@ -53,6 +54,10 @@ function App() {
         <Route
           path="/home/incoming"
           element={authUser ? <IncomingRequests /> : <Navigate to={"/login"} /> }
+        />
+        <Route
+          path="/home/donate"
+          element={authUser ? <DonatePage /> : <Navigate to={"/login"} /> }
         />
       </Routes>
       <Toaster/>

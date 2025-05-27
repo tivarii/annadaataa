@@ -36,6 +36,9 @@ export function HomeLanding() {
           <Link className={styleClasses} to="/home/myrequest">
             My Requests
           </Link>
+          <Link className={styleClasses} to="/home/donate">
+            Donate Money
+          </Link>
           <Button
             className="rounded-full"
             size="icon"
@@ -86,6 +89,9 @@ export function HomeLanding() {
             </Link>
             <Link className={styleClasses} to="/home/myrequest">
               My Requests
+            </Link>
+            <Link className={styleClasses} to="/home/donate">
+              Donate Money
             </Link>
             <Button
               className="rounded-full"
