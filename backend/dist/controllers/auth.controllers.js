@@ -23,6 +23,7 @@ const registerSchema = zod_1.z.object({
     password: zod_1.z.string().min(8),
 });
 const register = (req, res) => __awaiter(void 0, void 0, void 0, function* () {
+    console.log("Registering user", req.body);
     try {
         const { username, email, password } = registerSchema.parse(req.body);
         const trimmeduser = username.trim();

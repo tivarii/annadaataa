@@ -11,6 +11,7 @@ const registerSchema = z.object({
 });
 
 export const register = async (req: Request, res: Response) => {
+  console.log("Registering user", req.body);
   try {
     const { username, email, password } = registerSchema.parse(req.body);
 

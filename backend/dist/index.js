@@ -16,12 +16,13 @@ dotenv_1.default.config({
     path: './.env'
 });
 const app = (0, express_1.default)();
-app.use((0, cors_1.default)({
-    origin: "*",
-    optionsSuccessStatus: 200,
-    methods: ["GET", "POST", "DELETE", "PATCH"],
-    credentials: true
-}));
+// app.use(cors({
+//   origin: "*",
+//   optionsSuccessStatus: 200,
+//   methods: ["GET", "POST", "DELETE", "PATCH"],
+//   credentials: true
+// }));
+app.use((0, cors_1.default)());
 app.use((0, cookie_parser_1.default)());
 app.use(express_1.default.json({ limit: "50mb" }));
 app.use(express_1.default.static('public/temp'));
