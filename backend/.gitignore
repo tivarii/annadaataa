@@ -1,4 +1,9 @@
+# Ignore environment variable files
 .env
-node_modules
 backend/.env
+
+# Ignore node modules
+node_modules/
+
+# Ignore build output
 dist/
